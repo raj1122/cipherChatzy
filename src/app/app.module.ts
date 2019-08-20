@@ -7,14 +7,12 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { HomeModule } from './home/home.module';
-import { SharedModule,  FooterComponent,  HeaderComponent } from './shared';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
 
 
 
-import { ScriptService } from 'src/assets/script.service';
+import { ScriptService } from 'src/app/services/script.service';
 
 import { AuthHttp, AUTH_PROVIDERS, provideAuth, AuthConfig } from 'angular2-jwt/angular2-jwt';
 
@@ -33,15 +31,14 @@ import {fakeBackendProvider} from './helper/fake-backend';
 import {ErrorInterceptor} from './helper/error.interceptor';
 import {JwtInterceptor} from './helper/jwt.interceptor';
 import {AuthGuardService} from './services/auth-guard.service';
+import {LoginModule} from './login/login.module';
+import {HomeModule} from './home/home.module';
+import {LayoutModule} from './shared/layout.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    NoAccessComponent,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent
+    NoAccessComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +47,9 @@ import {AuthGuardService} from './services/auth-guard.service';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    LoginModule,
+    HomeModule,
+    LayoutModule,
     RouterModule.forRoot([])
   ],
   providers: [
@@ -58,10 +58,11 @@ import {AuthGuardService} from './services/auth-guard.service';
     AuthGuardService,
 
 
-    // For creating a mock back-end. You don't need these in a real app.
-    fakeBackendProvider,
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
+    // // For creating a mock back-end. You don't need these in a real app.
+    // fakeBackendProvider,
+    // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
   ],
   bootstrap: [AppComponent]

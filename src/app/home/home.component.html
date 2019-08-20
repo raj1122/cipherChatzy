@@ -1,0 +1,151 @@
+<div id="page-wrapper">
+
+
+  <div class="row">
+    <!-- Page Header -->
+    <div class="col-lg-12">
+      <h1 class="page-header">Dashboard</h1>
+    </div>
+    <!--End Page Header -->
+  </div>
+
+
+
+  <div class="row">
+    <!-- Welcome -->
+    <div class="col-lg-12">
+      <div class="alert alert-info">
+        <i class="fa fa-folder-open"></i><b>&nbsp;Hello ! </b>Welcome Back  <b>
+       Rajat Soren</b>
+
+      </div>
+    </div>
+    <!--end  Welcome -->
+  </div>
+  <!---notification-->
+  <div class="row">
+    <!--quick info section -->
+    <div class="col-lg-3">
+      <div class="alert alert-danger text-center">
+        <i class="fa fa-calendar fa-3x"></i>&nbsp;<b>20+ </b>Favourites Memory
+
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="alert alert-success text-center">
+        <i class="fa  fa-beer fa-3x"></i>&nbsp;<b>Firends </b>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="alert alert-info text-center">
+        <i class="fa fa-rss fa-3x"></i>&nbsp;<b>1,900</b> Followers
+
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="alert alert-warning text-center">
+        <i class="fa  fa-pencil fa-3x"></i>&nbsp;<b>2,000 $ </b>Popularity
+      </div>
+    </div>
+
+  </div>
+  <!--end quick info section -->
+
+  <!--Timeline Started-->
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <i class="fa fa-clock-o fa-fw"></i>Timeline
+        </div>
+        <div class="panel-body">
+
+          <ul class="timeline t_append">
+            <li>
+              <form class="form-horizontal timeline_text" >
+                <div class="form-group">
+                  <div class="col-lg-6 col-sm-6">
+                        						<textarea class="form-control" rows="5" cols="1"
+                                              name="timeline_text">
+                        						</textarea>
+                  </div>
+                </div>
+                <input type="hidden" name="tie"
+                       value="timeline_txt">
+                <div class="form-group">
+                  <div class="col-lg-1 col-sm-1">
+                    <button type="submit"  class="btn btn-info sb_submit">
+                      POST
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div class="form-group">
+          <div class="col-sm-4 col-lg-4">
+            <form action="upload.php" class="upload-photo" id="upload-photo11"  method="post" class="form-inline"
+                  enctype="multipart/form-data">
+              <div class="form-group col-lg-8">
+                <input type="file" name="fileToUpload"
+                       id="fileToUpload">
+                <input type="hidden" name="tie" id="tie" value="timeline">
+              </div>
+              <div class="form-group col-lg-1">
+                <button type="submit"
+                        class="btn btn-danger btn-m"
+                        name="submit" class="subm">
+                  Upload Image
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
+
+
+      <li>
+        <div class="timeline-badge info">
+          <i class="fa fa-save"></i>
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Timeline Event</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Lorem ipsum dolor sit amet,  lectus aliquet egestas.</p>
+            <hr>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-cog"></i>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a>
+                </li>
+                <li><a href="#">Another action</a>
+                </li>
+                <li><a href="#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+</div>
+<!--End Timeline -->
+
+
+</div>

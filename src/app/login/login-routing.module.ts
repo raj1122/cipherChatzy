@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule  } from '@angular/router';
 import { LoginComponent } from './login.component';
 
 const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-    data: { showHeader: false, showSidebar: true }
+    data: { showHeader: false, showFooter: true }
   }
 ];
 

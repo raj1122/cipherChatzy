@@ -1,0 +1,319 @@
+<!--  wrapper -->
+<div id="wrapper">
+  <!-- navbar top -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+    <!-- navbar-header -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/cipher.png" alt="" />
+      </a>
+    </div>
+    <!-- end navbar-header -->
+    <!-- navbar-top-links -->
+    <ul class="nav navbar-top-links navbar-right">
+      <!-- main dropdown -->
+      <li class="dropdown showmessage">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <span class="top-label label label-danger">3</span><i class="fa fa-envelope fa-3x"></i>
+        </a>
+      </li>
+
+      <!-- dropdown-messages -->
+      <ul class="dropdown-menu dropdown-messages d_top_3">
+      </ul>
+      <!-- end dropdown-messages -->
+
+
+
+
+      <li class="dropdown show_notification">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <span class="top-label label label-warning">5</span>  <i class="fa fa-bell fa-3x"></i>
+        </a>
+        <!-- dropdown alerts-->
+        <ul class="dropdown-menu dropdown-alerts top_noti">
+          <li>
+            <a href="#">
+              <div>
+                <i class="fa fa-comment fa-fw"></i>New Comment
+                <span class="pull-right text-muted small">4 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <div>
+                <i class="fa fa-twitter fa-fw"></i>3 New Followers
+                <span class="pull-right text-muted small">12 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <div>
+                <i class="fa fa-envelope fa-fw"></i>Message Sent
+                <span class="pull-right text-muted small">4 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <div>
+                <i class="fa fa-tasks fa-fw"></i>New Task
+                <span class="pull-right text-muted small">4 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <div>
+                <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                <span class="pull-right text-muted small">4 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a class="text-center" href="#">
+              <strong>See All Alerts</strong>
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- end dropdown-alerts -->
+      </li>
+
+      <li class="dropdown show_logout">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <i class="fa fa-user fa-3x"></i>
+        </a>
+        <!-- dropdown user-->
+        <ul class="dropdown-menu dropdown-user lgout">
+          <li><a href="profile.php"><i class="fa fa-user fa-fw"></i>User Profile</a>
+          </li>
+          <li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a>
+          </li>
+          <li class="divider"></li>
+          <li><a (click)="logOut()"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+          </li>
+        </ul>
+        <!-- end dropdown-user -->
+      </li>
+      <!-- end main dropdown -->
+    </ul>
+    <!-- end navbar-top-links -->
+
+  </nav>
+  <!-- end navbar top -->
+
+  <!-- navbar side -->
+  <nav class="navbar-default navbar-static-side" role="navigation"  style="position: fixed;">
+    <!-- sidebar-collapse -->
+    <div class="sidebar-collapse">
+      <!-- side-menu -->
+      <ul class="nav" id="side-menu">
+        <li>
+          <!-- user image section-->
+          <div class="user-section">
+            <div class="user-section-inner">
+              <img src="../../../../assets/img/user.jpg" alt="" id="imgclick">
+
+            </div>
+
+            <!--start of end user image section-->
+            <div class="user-info">
+              <div>
+                Rajat
+                <strong>
+                  Soren
+                </strong>
+              </div>
+              <div class="user-text-online">
+                                    <span id="999" class="user-circle-online
+                                     btn btn-success btn-circle user_online "></span>&nbsp;Online
+              </div>
+            </div>
+          </div>
+          <!--end user image section-->
+        </li>
+
+        <li class="selected">
+          <a href="home1.php"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+        </li>
+
+        <li>
+<!--          <a href="#myModal1" class="get-value1" data-toggle="modal" data target="#myModal1">-->
+          <a href="#" class="get-value1">
+            <i class="fa fa-user fa-fw"></i>
+            Random chat
+          </a>
+        </li>
+
+        <li>
+          <a href="message.php"><i class="fa fa-flask fa-fw"></i>Message</a>
+        </li>
+        <li>
+          <a href="friend.php"><i class="fa fa-child fa-fw"></i>Friend</a>
+        </li>
+        <li>
+          <a href="profile.php"><i class="fa fa-user fa-fw"></i>Profile</a>
+        </li>
+        <li>
+          <a href="frequest.php"><i class="fa fa-user fa-fw"></i>Friend Request</a>
+        </li>
+
+
+
+        <li>
+          <a href="#"><i class="fa fa-user fa-fw"></i>People</a>
+        </li>
+
+      </ul>
+      <!-- end side-menu -->
+    </div>
+    <!-- end sidebar-collapse -->
+  </nav>
+  <!-- end navbar side -->
+</div>
+
+
+<!--<div class="container">-->
+<!--  &lt;!&ndash; Modal &ndash;&gt;-->
+<!--  &lt;!&ndash; data-backdrop="static" data-keyboard="false"  &ndash;&gt;-->
+<!--  &lt;!&ndash; use this modal to prevent it from closing by outside &ndash;&gt;-->
+<!--  <div class="modal " id="myModal1" role="dialog"  aria-hidden="false"  >-->
+<!--    <div class="modal-dialog modal-lg">-->
+<!--      <div class="modal-content" style="background: transparent;border: 0px;box-shadow: 0px 0px 0px">-->
+
+
+<!--        <div class="modal-body" style="background: transparent;">-->
+<!--          <div class="row">-->
+<!--            <div class="col-lg-6">-->
+<!--              <div class="chat-panel panel panel-primary">-->
+
+<!--                &lt;!&ndash;panel heading&ndash;&gt;-->
+<!--                <div class="panel-heading">-->
+<!--                  <i class="fa fa-comments fa-fw"></i>-->
+<!--                  chat-->
+<!--                  <div class="btn-group pull-right">-->
+<!--                    <button type="button" class="btn btn-default btn-xs dropdown-toggle dropdowna" data-toggle="dropdown">-->
+<!--                      <i class="fa fa-chevron-down"></i>-->
+<!--                    </button>-->
+<!--                    <ul class="dropdown-menu slidedown layout layoooo" style="top: 20px;left: -136px;">-->
+<!--                      <li>-->
+<!--                        <a href="#">-->
+<!--                          <i class="fa fa-check-circle fa-fw"></i>Available-->
+<!--                        </a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <a href="#">-->
+<!--                          <i class="fa fa-times"></i>Busy-->
+<!--                        </a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <a href="#"  data-dismiss="modal">-->
+<!--                          <i class="fa fa-clock-o fa-fw"></i>Away-->
+<!--                        </a>-->
+<!--                      </li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+
+<!--                &lt;!&ndash;chat example&ndash;&gt;-->
+<!--                <div class="panel-body">-->
+<!--                  <ul class="chat">-->
+
+<!--                    &lt;!&ndash;    <li class="left clearfix">-->
+<!--                            <span class="chat-img pull-left">-->
+<!--                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">-->
+<!--                            </span>-->
+<!--                            <div class="chat-body clearfix">-->
+<!--                                <div class="header">-->
+<!--                                    <strong class="primary-font">Jack</strong>-->
+<!--                                    <small class="pull-right text-muted">-->
+<!--                                        <i class="fa fa-clock-o fa-fw"></i>12 mins ago-->
+<!--                                    </small>-->
+<!--                                </div>-->
+<!--                                <p>-->
+<!--                                    chat-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+
+
+
+<!--                        <li class="right clearfix">-->
+<!--                            <span class="chat-img pull-right">-->
+<!--                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">-->
+<!--                            </span>-->
+<!--                            <div class="chat-body clearfix">-->
+<!--                                <div class="header">-->
+<!--                                    <small class=" text-muted">-->
+<!--                                        <i class="fa fa-clock-o fa-fw"></i>13 mins ago-->
+<!--                                    </small>-->
+<!--                                    <strong class="pull-right primary-font">sparrow</strong>-->
+<!--                                </div>-->
+<!--                                <p>-->
+<!--                                    chat-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--&ndash;&gt;-->
+
+<!--                    &lt;!&ndash; <li class="right clearfix">-->
+<!--                                <span class="chat-img pull-right">-->
+<!--                                    <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">-->
+<!--                                </span>-->
+<!--                                <div class="chat-body clearfix">-->
+<!--                                    <div class="header">-->
+<!--                                        <small class=" text-muted">-->
+<!--                                            <i class="fa fa-clock-o fa-fw"></i>Since friends-->
+<!--                                        </small>-->
+<!--                                        <strong class="pull-right primary-font">No messages</strong>-->
+<!--                                    </div>-->
+<!--                                    <p>-->
+<!--                                        no messages-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </li> &ndash;&gt;-->
+
+<!--                  </ul>-->
+<!--                </div>-->
+
+<!--                <div class="panel-footer">-->
+<!--                  <form action="ajmsg.php" method="POST"-->
+<!--                        class="my_form1">-->
+<!--                    <div class="input-group form-group">-->
+<!--                      <input type="text" name="msg" id="btn-input" class="form-control input-sm msg1" placeholder="enter your message..." required="">-->
+<!--                      <input type="hidden" name="rid" id="btn-input111" value=""-->
+<!--                             class="form-control input-sm rid_msg">-->
+<!--                      <span class="input-group-btn">-->
+<!--                                    <button type="submit" class="btn btn-warning btn-sm signup_random" id="btn-chat1">-->
+<!--                                        Send-->
+<!--                                    </button>-->
+<!--                                </span>-->
+<!--                    </div>-->
+<!--                  </form>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
